@@ -1,0 +1,97 @@
+/*--------------------------------------------------------------
+# Defaults
+--------------------------------------------------------------*/
+* {
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+:root {
+    --primary-color: rgb(25, 119, 204);
+}
+
+.bg-blue {
+    background-color: var(--primary-color);
+}
+
+.text-blue {
+    color: var(--primary-color);
+}
+
+
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+    background: var(--primary-color);
+    height: 40px;
+    font-size: 1rem;
+    transition: all 0.5s;
+    z-index: 996;
+    color: white;
+}
+
+#topbar .contact-info a {
+    line-height: 1;
+    color: white;
+    transition: 0.3s;
+}
+
+#topbar .contact-info a:hover {
+    color: rgb(202, 202, 202);
+}
+
+#topbar .contact-info i {
+    color: white;
+    padding-right: 4px;
+    margin-left: 15px;
+    line-height: 0;
+}
+
+#topbar .contact-info i:first-child {
+    margin-left: 0;
+}
+
+#topbar .social-links a {
+    color: white;
+    padding-left: 15px;
+    display: inline-block;
+    line-height: 1px;
+    transition: 0.3s;
+}
+
+#topbar .social-links a:hover {
+    color: rgb(202, 202, 202);
+}
+
+#topbar .social-links a:first-child {
+    border-left: 0;
+}
+
+main{
+    height: 100%;
+}
+
+main .patient,
+main .staff{
+    border: 1px solid gray;
+    border-radius: 10px;
+    transition: linear .5s;
+}
+
+main .patient:hover,
+main .staff:hover{
+    background-color: red;
+}
+
+main img{
+    margin: auto;
+    width: 350px;
+    max-width: 100%;
+}
